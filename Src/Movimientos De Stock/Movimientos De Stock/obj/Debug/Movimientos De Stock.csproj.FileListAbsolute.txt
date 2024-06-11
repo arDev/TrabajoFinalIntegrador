@@ -11,3 +11,6 @@ E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Sto
 E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.csproj.CopyComplete
 E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.exe
 E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.pdb
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Datos.dll
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Datos.pdb
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos_De_Stock.FrmNuevo.resources

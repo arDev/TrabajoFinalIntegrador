@@ -2,6 +2,7 @@
 using Negocio.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -11,53 +12,70 @@ namespace Negocio
 {
     public class Procesos
     {
-        public void Guardar(string nombre)
+        public bool ProbarConexion()
         {
-            SqlServer sqlConex = new SqlServer();
+            SqlServer sqlServer = new SqlServer();
 
-            string sql = $"insert into Nombres (nombre) values ('{nombre}')";
+            sqlServer.Conectar();
 
-            sqlConex.CrearComando(sql);
-            sqlConex.Ejecutarcomando();
+            return true;
         }
 
-        public void GuardarMovimiento(Movimiento movimiento)
+        public List<Cliente> TraerClientes()
         {
-            SqlServer sqlConex = new SqlServer();
-
-            string sql = $"insert into Movimientos (fecha,numero) values ('{movimiento.Fecha}','{movimiento.Numero}')";
-
-            sqlConex.CrearComando(sql);
-            sqlConex.Ejecutarcomando();
-
-            foreach(Detalle d in movimiento.detalles)
-            {
-                string sql = $"insert into detalles (numero,CodigoArticulo,cantidad) " +
-                    $"               values ('{d.numero}','{d.Codgio}','{d.Cantidad}')";
-
-                sqlConex.CrearComando(sql);
-                sqlConex.Ejecutarcomando();
-            }
-        }
-
-        public List<string> TraerNombres()
-        {
-            List<string> nombres = new List<string>();
+            List<Cliente> clientes = new List<Cliente>();
 
             SqlServer sqlConex = new SqlServer();
 
-            string sql = $"select nombre from nombres";
+            sqlConex.Conectar();
+
+            string sql = @"SELECT    [CustomerID]
+                                    ,[CompanyName]
+                                    ,[ContactName]
+                                    ,[ContactTitle]
+                                    ,[Phone]
+                                    FROM [Northwind].[dbo].[Customers]";
+
 
             sqlConex.CrearComando(sql);
             DbDataReader reader = sqlConex.EjecutarConsulta();
 
-            while(reader.Read())
+            while (reader.Read())
             {
-                nombres.Add(dr.GetString(0));
+                Cliente cliente = new Cliente();
+                cliente.CustomerID = reader.GetString(0);
+                cliente.CompanyName = reader.GetString(1);
+                cliente.ContactName = reader.GetString(2);
+                cliente.ContactTitle = reader.GetString(3);
+                cliente.Phone = reader.GetString(4);
+                clientes.Add(cliente);
             }
-            return nombres;
+
+            sqlConex.Desconectar();
+
+            return clientes;
         }
 
+        public DataTable TraerClientesDataTable()
+        {
+            SqlServer sqlConex = new SqlServer();
 
+            sqlConex.Conectar();
+
+            string sql = @"SELECT    [CustomerID]
+                                    ,[CompanyName]
+                                    ,[ContactName]
+                                    ,[ContactTitle]
+                                    ,[Phone]
+                                    FROM [Northwind].[dbo].[Customers]";
+
+
+            sqlConex.CrearComando(sql);
+            DbDataReader reader = sqlConex.EjecutarConsulta();
+
+            DataTable dt = new DataTable();
+            dt.Load(reader);
+            return dt;
+        }
     }
 }

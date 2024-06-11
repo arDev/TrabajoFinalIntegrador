@@ -13,28 +13,56 @@ using System.Windows.Forms;
 namespace Movimientos_De_Stock
 {
     public partial class FrmPrincipal : Form
-    {
-        List<Detalle> detalles
+    { 
         public FrmPrincipal()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Movimiento movi = new Movimiento();
-            movi.Nombre = textBox1.Text;
-            movi.Nombre = textBox1.Text;
-            movi.Nnumero = textBox1.Text;
-            movi.detalles = detalles;
-            Procesos p = new Procesos();
-            p.GuardarMovimiento(movi);
-        }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            Procesos p = new Procesos();
-            List<string> nombre = p.TraerNombres();
+
+        }
+
+        private void btnProbarConexion_Click(object sender, EventArgs e)
+        {
+            Procesos procesos = new Procesos();
+            if(procesos.ProbarConexion())
+            {
+                MessageBox.Show("Conexion exitosa!");
+            }
+        }
+
+        private void btnTraerClientes_Click(object sender, EventArgs e)
+        {
+            Procesos procesos = new Procesos();
+            List<Cliente> clientes = procesos.TraerClientes();
+            dgvClientes.DataSource = clientes;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Procesos procesos = new Procesos();
+            DataTable clientes = procesos.TraerClientesDataTable();
+            dgvClientes.DataSource = clientes;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dgvClientes.DataSource = null;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmNuevo fNuevo = new FrmNuevo("Nuevo parametro");
+            fNuevo.Param = "algo";
+            fNuevo.ShowDialog();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Saludos desde el menu de ayuda");
         }
     }
 }

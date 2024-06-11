@@ -16,7 +16,5 @@ namespace Negocio.Modelos
         public string Nombre { get; set; }
 
         public string Tipo { get;set; }
-
-        public List<Detalle> detalles { get; set; }
     }
 }

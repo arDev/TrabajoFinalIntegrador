@@ -52,8 +52,17 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
