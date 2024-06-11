@@ -1,0 +1,13 @@
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Movimientos De Stock.exe.config
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Movimientos De Stock.exe
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Movimientos De Stock.pdb
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Negocio.dll
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\bin\Debug\Negocio.pdb
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.csproj.AssemblyReference.cache
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos_De_Stock.FrmPrincipal.resources
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos_De_Stock.Properties.Resources.resources
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.csproj.GenerateResource.cache
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.csproj.CoreCompileInputs.cache
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.csproj.CopyComplete
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.exe
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Movimientos De Stock\obj\Debug\Movimientos De Stock.pdb

@@ -1,0 +1,6 @@
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\bin\Debug\Datos.dll
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\bin\Debug\Datos.pdb
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\obj\Debug\Datos.dll
+E:\Las Nieves\TrabajoFinalIntegrador\Src\Movimientos De Stock\Datos\obj\Debug\Datos.pdb
